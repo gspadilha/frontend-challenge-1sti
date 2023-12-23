@@ -1,35 +1,115 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p id='main-title'>Previsão do Tempo</p>
+      <main>
+        <div>Niterói, RJ - Brasil</div>
+        <div>20°C Nublado</div>
+        <div>
+          <span>↓ 16°</span>
+          <span>↓ 25°</span>
+          <span>Sensação 19°</span>
+        </div>
+        <div>
+          <span>Vento 18km/h</span>
+          <span>Humidade 89%</span>
+        </div>
+        <hr />
+        <div>
+          <div>
+            <span>Terça</span>
+            <span>18° 26°</span>
+          </div>
+          <div>
+            <span>Quarta</span>
+            <span>18° 26°</span>
+          </div>
+          <div>
+            <span>Quinta</span>
+            <span>18° 26°</span>
+          </div>
+          <div>
+            <span>Sexta</span>
+            <span>18° 26°</span>
+          </div>
+          <div>
+            <span>Sábado</span>
+            <span>18° 26°</span>
+          </div>
+        </div>
+      </main>
+      <input type='text' placeholder='Insira o nome da cidade' />
+      <section id='capitals'>
+        <p>Capitais</p>
+        <div>
+          <aside>
+            <div>
+              <span>Min</span>
+              <span>Max</span>
+              <span>&nbsp;</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+          </aside>
+          <aside>
+            <div>
+              <span>Min</span>
+              <span>Max</span>
+              <span>&nbsp;</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+            <div>
+              <span>18°</span>
+              <span>27°</span>
+              <span>Rio de Janeiro</span>
+            </div>
+          </aside>
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
