@@ -1,0 +1,40 @@
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--white);
+  margin: 16px;
+  padding: 16px;
+}
+
+#capitals p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--white);
+  padding-bottom: 16px;
+}
+
+#capitals div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#capitals aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  gap: 16px;
+}
+
+h3 span {
+  margin-right: 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.h3-title span {
+  font-weight: lighter;
+  color: var(--dark);
+}
